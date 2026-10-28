@@ -1,0 +1,35 @@
+schema: spec-driven
+
+context: |
+  Language: zh-CN
+  All artifacts must be written in zh-CN.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  项目：PhotoCraft（ArtCraft 生态的专业调色器，Rust/WASM）。
+  上游：storytold/photocraft；许可 MIT OR Apache-2.0。
+  本工作区关系：线上 /photocraft/ 由前端仓库 CI 从上游源码构建（打 ai-bridge.patch），
+                产物由 photocraft-build.lock + verify-photocraft-build.sh 校验；
+                本 fork 不参与部署，仅参考/试验。
+  文档：上游 README/AGENTS.md/ROADMAP/docs 为实现权威；本 openspec 只记工作区集成。
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always state what is out of scope
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing
